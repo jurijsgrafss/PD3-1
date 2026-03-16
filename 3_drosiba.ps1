@@ -1,5 +1,3 @@
-# Check Windows Defender protection status
-
 $status = Get-MpComputerStatus
 
 $rt = $status.RealTimeProtectionEnabled
