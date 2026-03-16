@@ -1,4 +1,4 @@
-$docPath = [Environment]::GetFolderPath("MyDocuments")
+$docPath = [Environment]::GetFolderPath("")
 $errorsFile = Join-Path $docPath "Errors.txt"
 
 $date = Get-Date -Format "yyyy-MM-dd"
