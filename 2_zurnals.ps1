@@ -9,10 +9,10 @@ StartTime=$start
 $file = "$env:USERPROFILE\Documents\Errors.txt"
 
 if ($errors.Count -gt 10) {
-    "[KRITISKI] Sistēma ir nestabila!" | Out-File $file
+    "[KRITISKI] Sistema ir nestabila!" | Out-File $file
 }
 else {
-    "[OK] Kļūdu līmenis normāls." | Out-File $file
+    "[OK] Kludu limenis normals." | Out-File $file
 }
 
 $errors | ForEach-Object {
