@@ -1,5 +1,3 @@
-# Create archive of Errors.txt with current date
-
 $docPath = [Environment]::GetFolderPath("MyDocuments")
 $errorsFile = Join-Path $docPath "Errors.txt"
 
@@ -11,4 +9,4 @@ Compress-Archive -Path $errorsFile -DestinationPath $zipPath -Force
 
 $sizeKB = (Get-Item $zipPath).Length / 1KB
 
-Write-Output ("Arhīva izmērs: {0:N2} KB" -f $sizeKB)
+Write-Output ("Arhiva izmers: {0:N2} KB" -f $sizeKB)
