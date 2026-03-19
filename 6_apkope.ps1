@@ -16,7 +16,7 @@ if ($freePercent -lt 25) {
     $after = (Get-PSDrive C).Free
     $freedGB = ($after - $before) / 1GB
 
-    $msg = "[$time] Tirisana veikta. Atbrivoti {0:N2} GB." -f $freedGB
+    $msg = "[$time] Tirisana veikta. Atbrivoti {$freedGB} GB." -f $freedGB
 }
 else {
     $msg = "[$time] Vieta pietiekama."
