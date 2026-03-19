@@ -1,5 +1,3 @@
-# Proactive disk maintenance
-
 $drive = Get-PSDrive C
 $freePercent = ($drive.Free / ($drive.Free + $drive.Used)) * 100
 
@@ -18,7 +16,7 @@ if ($freePercent -lt 25) {
     $after = (Get-PSDrive C).Free
     $freedGB = ($after - $before) / 1GB
 
-    $msg = "[$time] Tīrīšana veikta. Atbrīvoti {0:N2} GB." -f $freedGB
+    $msg = "[$time] Tirisana veikta. Atbrivoti {0:N2} GB." -f $freedGB
 }
 else {
     $msg = "[$time] Vieta pietiekama."
